@@ -2,6 +2,7 @@ body {
     font-family: cursive;
     margin: 0px;
     padding: 0px;
+    background-size: 100%, 100%;
 } 
 h1 {
   font-weight: 700;
@@ -11,13 +12,15 @@ h1 {
     display: inline-block;
     text-align: center;
  } 
-#right { 
+.right { 
     position: absolute;
-    background-color: black;
     width: 40%;
     right: 0px;
     height: 100%;
     color: black;
+    background-image: url(R.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 } 
 #left {
     position: absolute;
@@ -25,7 +28,7 @@ h1 {
     height: 100%;
  } 
 
-#picture {
+.picture {
     position: absolute;
     top: 50%;
     left: 60%;
@@ -44,25 +47,34 @@ h1 {
     border-color: grey white grey black;
     background-image: url("1664525333966.jpg"); 
     background-size: 100%;
+    cursor: pointer;
 } 
 #left p {
     line-height: 2.5em;
  } 
 
-#right .inside { 
-    position: absolute;
-    background-color: white;
-    width: 200px;
-    height: 20px;
-    right: 10%;
-    top: 10%;
-    border-radius: 10px;
+.right .inside {
+    position: relative;
+    background-color: rgba(242, 247, 247, 0.7);
+    height: 34px;
+    top: 40px;
+    border-radius: 17px;
     color: black;
-    
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    margin-right: 20px;
+    cursor: pointer;
+    transform: translateX(800px);
+    transition: 1.5s;
 } 
-{ } 
-{ } 
-{ } 
-{ } 
-{ } 
-{ } 
+
+.right:hover .inside {
+    transform: translateX(0px);
+ } 
+ a {
+    text-decoration: none;
+} 
+    
+  } 
